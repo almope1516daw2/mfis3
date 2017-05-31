@@ -1,0 +1,40 @@
+input AddRegisterInput {
+  name: String!
+  surname: String!
+  mail: String!
+  image: String!
+  salt: String
+  hash: String
+  clientMutationId: String!
+}
+
+type AddRegisterPayload {
+  user: User
+  clientMutationId: String!
+}
+
+interface Node {
+  id: ID!
+  type: String!
+}
+
+type RootMutation {
+  addRegister(input: AddRegisterInput!): AddRegisterPayload
+}
+
+type RootQuery {
+  user(id: ID): User
+  users: [User]
+  node(id: ID!): Node
+}
+
+type User implements Node {
+  id: ID!
+  name: String
+  surname: String
+  mail: String
+  image: String
+  salt: String
+  hash: String
+  type: String!
+}

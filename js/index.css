@@ -1,0 +1,17 @@
+#Test {
+  color: #3e8f3f; }
+
+body {
+  background: url(../public/images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#mainElement {
+  margin-top: 150px;
+  background: #ffffff;
+  position: relative;
+  height: 500px; }
+
+/*# sourceMappingURL=index.css.map */

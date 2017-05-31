@@ -1,0 +1,277 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  background: url(../images/background.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  .navbar {
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0, 0, 0, 0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop(0%, rgba(0, 0, 0, 0.00)), color-stop(100%, rgba(0, 0, 0, 0.00)));
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 100%);
+
+  }
+
+  #logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    @media only screen and (min-width: 654px) {
+      margin-left: 100px;
+    }
+  }
+  .navbar-right {
+    margin-right: 10px;
+    margin-top: 10px;
+    @media only screen and (min-width: 654px) {
+      margin-right: 100px;
+    }
+
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+    font-size: 17px;
+  }
+
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #ffffff;
+  }
+
+  .custom-modal {
+    position: relative;
+    top: 25%;
+  }
+  .modal-content {
+    border-radius: 13px;
+  }
+  .modal-body {
+    padding: 60px 80px;
+    h3 {
+      font-size: 20px;
+      font-weight: lighter;
+      line-height: 1.5;
+      color: #656d78;
+    }
+  }
+  .modal-footer {
+    padding: 0;
+    border-top: none;
+    button {
+      width: 100%;
+      background-color: #38b5ed;
+      height: 50px;
+      border-radius: 13px;
+
+      font-size: 18px;
+      font-weight: lighter;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    button:hover {
+
+      background-color: #ffffff;
+
+      font-size: 18px;
+      font-weight: lighter;
+      text-align: center;
+      color: #000000;
+    }
+  }
+
+  #mainElement {
+    padding-top: 50px;
+
+    @media only screen and (max-width: 703px) {
+      padding: 15px;
+      padding-top: 100px;
+    }
+
+    @media only screen and (max-width: 654px) {
+      padding: 0px;
+      padding-top: 100px;
+    }
+
+    #mainContainer {
+
+      #Register, #Login {
+        position: absolute;
+        border-radius: 5px;
+        background-color: #ffffff;
+        padding: 40px 75px;
+        @media only screen and (max-width: 654px) {
+          padding: 40px 35px;
+        }
+        @media (max-width: 768px) and (min-width: 656px) {
+          margin-right: 15px;
+        }
+
+        h2 {
+
+          font-size: 22px;
+          font-weight: bolder;
+          color: #38b5ed;
+
+        }
+        h3 {
+          font-size: 20px;
+          font-weight: lighter;
+          line-height: 1.5;
+          color: #656d78;
+
+          @media only screen and (max-width: 654px) {
+            font-size: 18px;
+          }
+        }
+
+        input {
+          max-width: 500px;
+          width: 100%;
+          height: 45px;
+          border-radius: 3px;
+          background-color: #ffffff;
+          box-shadow: inset 1px 1px 3px 0 #ccd1d9;
+          border: solid 1px #ccd1d9;
+          padding: 8px;
+          margin-bottom: 13px;
+          font-size: 18px;
+
+          #inputPasswd {
+            padding-right: 30px;
+
+          }
+
+        }
+
+        input[type=password] {
+          -webkit-text-security: disc;
+        }
+
+        input[type=checkbox] {
+          box-shadow: none;
+          border: none;
+          width: 5%;
+          height: 15px;
+
+        }
+        #viewPassword {
+          margin-left: -30px;
+
+        }
+
+        #imageContainer {
+          float: left;
+          height: 70px;
+          width: 70px;
+          margin-bottom: 20px;
+          border: 1px solid #656d78;
+          border-radius: 50%;
+          #imageSelected {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+
+          }
+        }
+
+        #inputMailLogin {
+          margin-top: 130px;
+        }
+
+        #fileInput {
+
+        }
+        #fakeBrowse {
+          margin: 10px;
+          width: auto;
+          font-size: 17px;
+          font-weight: lighter;
+          color: #656d78;
+          background: none !important;
+          border: none;
+          padding: 0 !important;
+          cursor: pointer;
+          box-shadow: none;
+          top: 50%;
+          position: relative;
+
+        }
+
+        span {
+          font-size: 16px;
+          font-style: italic;
+          font-weight: lighter;
+          color: #de5145;
+          margin-left: 8px;
+
+        }
+        span#spanPassword {
+          margin-right: 23px;
+          @media only screen and (max-width: 807px) {
+            margin-right: 23px;
+          }
+        }
+
+        span#terms {
+          font-size: 15px;
+          color: #656d78;
+          font-weight: lighter;
+          font-style: normal;
+
+        }
+
+        .button {
+          border-radius: 3px;
+
+          box-shadow: 0 1px 5px 0 rgba(171, 175, 179, 0.6), inset 0 -2px 2px 0 rgba(122, 125, 128, 0.2);
+          border: solid 1px rgba(122, 125, 128, 0.3);
+          font-size: 18px;
+          font-weight: lighter;
+          text-align: center;
+          color: #ffffff;
+
+          width: 150px;
+          height: 50px;
+
+        }
+        .btnClear {
+          background-color: #9b9b9b;
+
+        }
+        .btnNext {
+
+          background-color: #38b5ed;
+
+        }
+
+        .btnLogin {
+          width: 100%;
+        }
+
+      }
+    }
+
+  }
+}
+
+@media only screen and (min-width: 1505px) {
+  body {
+    background-size: 100% 100%;
+  }
+}
+
+
+
+
+
+
